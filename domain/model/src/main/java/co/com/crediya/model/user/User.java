@@ -12,7 +12,7 @@ import java.util.UUID;
 @Getter
 @Builder(toBuilder = true)
 public class User {
-    private UUID id;
+    private String id;
     private String name;
     private String lastName;
     private Date dateOfBirth;

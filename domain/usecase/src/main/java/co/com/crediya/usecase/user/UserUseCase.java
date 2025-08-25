@@ -20,7 +20,7 @@ public class UserUseCase implements UserUseCasePort {
         return userRepository.findUserByEmail(emailAddress);
     }
 
-    public Mono<User> findUserById(UUID id) {
+    public Mono<User> findUserById(String id) {
         return userRepository.findUserById(id);
     }
 
@@ -28,7 +28,7 @@ public class UserUseCase implements UserUseCasePort {
         return userRepository.updateUser(user);
     }
 
-    public Mono<Void> deleteUserById(UUID id) {
+    public Mono<Void> deleteUserById(String id) {
         return userRepository.deleteUserById(id);
     }
 
