@@ -1,11 +1,11 @@
-package co.com.crediya.model.user.gateways;
+package co.com.crediya.usecase.user.port;
 
 import co.com.crediya.model.user.User;
 import reactor.core.publisher.Mono;
 
 import java.util.UUID;
 
-public interface UserRepository {
+public interface UserUseCasePort {
     Mono<User> saveUser(User user);
     Mono<User> findUserByEmail(String emailAddress);
     Mono<User> findUserById(UUID id);
